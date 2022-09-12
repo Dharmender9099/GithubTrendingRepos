@@ -1,0 +1,35 @@
+ext.versions = [
+
+        // support library
+        materialVersion         : '1.6.1',
+        constraintVersion       : '2.1.4',
+        appcompat               : '1.5.0',
+        core                    : '1.7.0',
+
+        // network
+        retrofitVersion         : '2.9.0',
+        okhttpVersion           : '4.7.2',
+        interceptorVersion      : '4.9.2',
+
+        // coroutines
+        coroutinesVersion       : '1.6.1',
+
+        // glide
+        glideVersion            : '4.13.0',
+
+        // dagger hilt
+        hiltVersion             : '2.37',
+        hiltLifecycleVersion    : '1.0.0-alpha03',
+
+        // navigation component
+        navVersion              : '2.5.2',
+
+        lifecycleLivedata       : '2.4.0',
+
+        //test
+        espressoVersion         : '3.4.0',
+        junitVersion            : '4.13.2',
+        AndroidxJunitVersion    : '1.1.3',
+        mockWebServerVersion    : '4.9.1'
+
+]

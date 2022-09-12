@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GitRepos</string>
+    <string name="search">Search</string>
+    <string name="retry_btn">Retry</string>
+    <string name="failed_msg">Failed to load data</string>
+    <string name="language">Language: %1$s</string>
+</resources>
