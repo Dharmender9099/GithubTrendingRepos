@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class TrendingReposViewModel @Inject constructor(private val trendingReposRepository: TrendingReposRepository) :
     ViewModel() {
-    /** describe coroutine scope */
+    /** Describe coroutine scope */
     private val coroutineScope = viewModelScope.coroutineContext + Job()
     private val trendingRepos = MutableLiveData(DEFAULT_QUERY)
 
@@ -28,7 +28,7 @@ class TrendingReposViewModel @Inject constructor(private val trendingReposReposi
         trendingRepos.value = DEFAULT_QUERY
     }
 
-    /**  Initiate http request for fetch github trending repos */
+    /**  Initiate http request to fetch github trending repos */
     val repos = trendingRepos.switchMap { query ->
         liveData(context = coroutineScope) {
             try {
@@ -42,7 +42,7 @@ class TrendingReposViewModel @Inject constructor(private val trendingReposReposi
         }
     }
 
-    /** Trending repos */
+    /** Trending repos collections*/
     private fun getTrendingReposList() = trendingReposList
 
     /** Update the status of selected item

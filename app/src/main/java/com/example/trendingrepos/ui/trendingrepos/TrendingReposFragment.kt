@@ -51,14 +51,18 @@ class TrendingReposFragment : Fragment(R.layout.fragment_trending_repos),
         when (apiResult) {
             //Request in loading state
             is ApiResult.Loading -> {
-                binding.progress.isVisible = true
+                binding.apply {
+                    progress.isVisible = true
+                    error.isVisible = false
+                    btnRetry.isVisible = false
+                }
             }
-            //Get success result
+            //Get Success
             is ApiResult.Success -> {
                 binding.progress.isVisible = false
                 initView(apiResult.data?.toMutableList() ?: mutableListOf())
             }
-            //Get the failure
+            //Get Failure
             is ApiResult.Error -> {
                 binding.apply {
                     toast(apiResult.message ?: resources.getString(R.string.failed_msg))

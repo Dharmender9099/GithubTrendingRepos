@@ -2,8 +2,8 @@ package com.example.trendingrepos.component
 
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.google.gson.Gson
 import com.example.trendingrepos.data.ApiResult
+import com.google.gson.Gson
 import retrofit2.HttpException
 
 /** Fun show toast message to input text

@@ -4,15 +4,15 @@
 Android App that lists trending Java Github repositories
 </p>
 
-## API
-Since there is no official API for Trending Repositories (it is one of the internal GitHub API’s),
+## API 
+There is no official API for Trending Repositories (it is one of the internal GitHub API’s),
 <br />
 I have decided to use [GitHub Search API](https://developer.github.com/v3/search/#search-repositories) and sort the repositories by their stars.
 
 ## Tech stack
 - Minimum SDK level 21
 - [Kotlin](https://kotlinlang.org/) based + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) for asynchronous.
-- Dagger-Hilt (alpha) for dependency injection.
+- Dagger-Hilt for dependency injection.
 - JetPack
   - LiveData - notify domain layer data to views.
   - Lifecycle - dispose of observing data when lifecycle state changes.

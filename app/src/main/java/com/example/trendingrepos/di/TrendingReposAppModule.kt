@@ -47,6 +47,7 @@ object TrendingReposAppModule {
 
     /**
      * TrendingGithubRepos api client
+     * @param retrofit: Retrofit instance to network call
      */
     @Provides
     @Singleton
